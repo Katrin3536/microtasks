@@ -31,6 +31,7 @@ export const NewComponent = ({students}: Props) => {
                         <span>{student.name} age: {student.age}</span>
                     </li>);
             })}</ul>
+
             <div>
                 <Button title={'MyYouTubeChannel-1'} callBack={()=>myFirstSubscriber('First')}/>
                 <Button title={'MyYouTubeChannel-2'} callBack={()=>mySecondSubscriber('Second')}/>
