@@ -2,6 +2,7 @@ import './App.css';
 import {NewComponent, type StudentType} from './components/NewComponent.tsx';
 import {Cars} from './components/Cars.tsx';
 import {HookState} from './components/HookState.tsx';
+import {FilterComponent} from './components/FilterComponent.tsx';
 
 export const App = () => {
     const students: StudentType[] = [
@@ -23,6 +24,7 @@ export const App = () => {
             <Cars/>
             <hr/>
             <HookState/>
+            <FilterComponent/>
         </>
     );
 };
