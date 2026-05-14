@@ -1,6 +1,7 @@
 import './App.css';
 import {NewComponent, type StudentType} from './components/NewComponent.tsx';
 import {Cars} from './components/Cars.tsx';
+import {HookState} from './components/HookState.tsx';
 
 export const App = () => {
     const students: StudentType[] = [
@@ -20,6 +21,8 @@ export const App = () => {
         <>
             <NewComponent students={students}/>
             <Cars/>
+            <hr/>
+            <HookState/>
         </>
     );
 };
