@@ -22,7 +22,6 @@ export const NewComponent = ({students}: Props) => {
     const mySubscriber=()=>{
         alert("Simply button")
     }
-
     return (
         <div>
             <ul>{students.map((student: StudentType) => {
