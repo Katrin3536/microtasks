@@ -9,17 +9,18 @@ export const Cars = () => {
     return (
         <>
             <table>
+                <thead>
                 <tr>
-                    {topCars.map((car) => {
-                        return <th>{car.manufacturer}</th>;
+                    {topCars.map((car,index) => {
+                        return <th key={index}>{car.manufacturer}</th>;
                     })}
                 </tr>
                 <tr>
-                    {topCars.map((car) => {
-                        return <td>{car.model}</td>;
+                    {topCars.map((car,index) => {
+                        return <td key={index}>{car.model}</td>;
                     })}
                 </tr>
-
+                </thead>
             </table>
         </>
     );
